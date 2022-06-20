@@ -3,6 +3,9 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
   {
+    _id: {
+      type: Schema.Types.ObjectId,
+    },
     name: {
       type: String,
       required: true,
@@ -21,7 +24,7 @@ const userSchema = new Schema(
       require: true,
     },
     employee: {
-      type: Boolean,
+      type: String,
       required: true,
     },
   },
